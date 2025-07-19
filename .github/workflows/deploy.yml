@@ -16,9 +16,9 @@ jobs:
       - name: Restore dependencies
         run: dotnet restore
       - name: Publish project
-        run: dotnet publish -c Release -o bin/Release/net8.0.412
+        run: dotnet publish -c Release -o bin/Release/net8.0
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./bin/Release/net8.0.412/wwwroot
+          publish_dir: ./bin/Release/net8.0/wwwroot
