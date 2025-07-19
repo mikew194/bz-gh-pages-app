@@ -4,6 +4,10 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <!-- <OutputPath>bin\Release\net8.0.412\</OutputPath> -->
+    <PublishTrimmed>false</PublishTrimmed>
+    <BlazorEnableCompression>true</BlazorEnableCompression>
+    <StaticWebAssetBasePath>bz-gh-pages-app</StaticWebAssetBasePath>
   </PropertyGroup>
 
   <ItemGroup>
